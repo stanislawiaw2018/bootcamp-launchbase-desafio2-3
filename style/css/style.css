@@ -1,0 +1,314 @@
+/*RESET*/
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body{
+    background: #111114;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+body .conteiner{
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 15vh 75vh 10vh;
+    grid-template-areas: "header header"
+                        "main main"
+                        "footer footer";
+    
+}
+/*=============================================================================
+MENU
+===============================================================================*/
+
+header{
+    display: grid;
+    grid-area: header;
+    align-content: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .9);
+    padding: 30px;
+    border-bottom: 2px solid #998989;
+    z-index: 1;
+
+}
+
+header .menu a{
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0rem 1rem;
+    color: rgba(255,255,255, 0.5);
+}
+header .menu a:hover{
+    color: rgb(255, 255, 255); 
+}
+.menu a[href^="https"]::before {
+    content: "🔗 ";
+  }
+  
+.menu a[href^="mailto"]::before {
+    content: "📧 ";
+}
+
+.menu a[href^="tel"]::before {
+    content: "📞 ";
+}
+
+.itens-menu a[href^="https"]::before {
+    content: "🔗 ";
+  }
+  
+.itens-menu a[href^="mailto"]::before {
+    content: "📧 ";
+}
+
+.itens-menu a[href^="tel"]::before {
+    content: "📞 ";
+}
+/* .btn-close{display: none} */
+.conteiner .header .logo{
+    display: none;
+}
+
+
+/* .btn-close{display: none} */
+.conteiner .header .logo{
+    display: none;
+}
+
+/*=============================================================================
+CORPO
+===============================================================================*/
+.corpo{
+    display: grid;
+    grid-area: main;
+    background: url(../image/trofeu.png) no-repeat;
+    background-position: 50vw top;
+    background-size: 800px;
+}
+.conteiner .corpo{
+    overflow: auto;/*Permite o scroll do corpo caso os elementos excedam o espaço*/
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+main .logo-corpo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 8%;
+    font-size: 2em;
+    color: white;
+}
+
+.corpo .logo-corpo img{
+    border-radius: 50%;
+}
+
+.corpo .mensagem{
+    width: 40%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    color: white;
+}
+.corpo .corpo-mensagem p{
+   margin: 30px 20px 30px;
+   text-align: justify;
+   font-size: 14px;
+   /* letter-spacing: 1px; */
+}
+
+.corpo .corpo-mensagem li{
+    margin-left: 20px;
+    list-style: none;
+   font-size: 14px;
+
+}
+/*=============================================================================
+RODAPE
+===============================================================================*/
+
+footer{
+    display: grid;
+    grid-area: footer;
+    background: rgba(0, 0, 0, .9);
+    border-top: 2px solid #998989;
+}
+.rodape{display: flex; align-items: center; justify-content: center;}
+.rodape a{font-size: 1.5em; color: rgba(255,255,255, 0.5); margin-right: 2%;}
+.rodape a:hover{ color: rgb(255, 255, 255)}
+/* ELIMINANDO A MARGEM DIREITA DO ULTIMO ELEMENTO DOS ICONES (NESSE O ULTIMO ELEMENTO FILHO)*/
+.rodape a:last-child{margin-right: 0;}
+
+/*==============================================================
+MEDIA QUERIES E BREAKPOINTS
+
+==============================================================*/
+
+/*===============================================================
+ smartphones, portrait iPhone, portrait 480x320 phones (Android) 
+ ===============================================================*/
+
+@media (min-width:300px) and (max-width:768px) { 
+    /*MENU*/
+    .conteiner .header .menu{
+        display: none;
+    }
+    .header{
+        height: auto;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .conteiner .header .logo{
+        display: flex;
+    }
+    .menu-bar button{
+        /* display: flex; */
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+       
+    }
+    .itens-menu{
+        /* align-content: center; */
+        /* justify-content: center; */
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-top: 18%;
+        padding: 10% 0;
+        margin-right: -30px;
+        width: 200px;
+        /* min-height: 100vh; */
+        background-color: rgba(255, 255, 255, 0.671);
+        /* overflow-x: hidden; */
+        /* overflow-y: auto; */
+        transition: all ease .8s;
+        z-index: 10;
+    }
+    
+    .itens-menu .btn-close{
+        color: black;
+        font-size: 2.5em;
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        cursor: pointer;
+    }
+    .itens-menu li{  
+        width: 100%;
+        padding: 0 20%;}
+    .itens-menu li:hover{
+        background-color: #ddd;
+    }
+    .itens-menu li a{ 
+        width: 16%; 
+        padding: 2%; 
+        color: black; 
+        margin: 0.3% 0.3%
+    }
+    .conteiner .header .logo {
+        display: flex;
+        align-items: center;
+        background: url(../image/logo-rocketseat.png)center center/40px no-repeat;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+       
+    }
+    .conteiner .header a span{
+        display: flex;
+        margin-left: 50px;
+    }
+
+    /* CORPO */
+    .corpo{
+        
+        background-position: 30vw top;
+        background-size: 800px;
+    }
+    .corpo .logo-corpo{
+        display: none;
+    }
+    .corpo .mensagem{
+        
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    
+}
+
+ /*===============================================================
+  smartphones, Android phones, landscape iPhone 
+  ================================================================*/
+@media (min-width:480px) { 
+    
+}
+
+ /*============================================================================================ 
+ portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android)
+ ============================================================================================ */
+@media (min-width:600px) { 
+    
+ }
+
+/* ============================================================
+tablet, landscape iPad, lo-res laptops ands desktops 
+================================================================*/ 
+@media (min-width:801px) { 
+    /*MENU*/
+    .menu{
+        display: block;
+    }
+    .conteiner .header .menu-bar{
+        display: none;
+    }
+    .conteiner .header .itens-menu{
+        display: none !important;
+    }
+    .conteiner .header .logo{
+        display: none;
+    }
+    .corpo .logo-corpo{
+        display: flex;
+    }
+}
+
+/*==================================================================
+ big landscape tablets, laptops, and desktops
+ ================================================================== */
+@media (min-width:1025px) {
+    
+  }
+
+/*======================================================
+ hi-res laptops and desktops 
+ =======================================================*/
+@media (min-width:1440px) { 
+    header .menu a{
+        
+        font-size: 25px;
+        
+    }
+    .corpo .mensagem .corpo-mensagem{
+        font-size: 20px;
+    }
+
+    .corpo .corpo-mensagem p,li{
+        font-size: 20px !important;
+    }
+ }
