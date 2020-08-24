@@ -12,6 +12,7 @@
 body{
     background: #111114;
     font-family: 'Roboto', sans-serif;
+    
    
 }
 
@@ -22,7 +23,11 @@ body .conteiner{
     grid-template-areas: "header header"
                         "main main"
                         "footer footer";
-    
+
+}
+
+main{
+    color: white;
 }
 /*=============================================================================
 MENU
@@ -40,16 +45,22 @@ header{
 
 }
 
-header .menu a{
+.header .menu a,
+.header-conteiner .btn-voltar{
     cursor: pointer;
     font-size: 20px;
     margin: 0rem 1rem;
     color: rgba(255,255,255, 0.5);
 }
-header .menu a:hover{
+.header .menu a:hover,
+.header-conteiner .btn-voltar:hover{
     color: rgb(255, 255, 255); 
+    transition: color 800ms;
 }
 .menu a[href^="https"]::before {
+    content: "🔗 ";
+  }
+.menu a[href^="/content.html"]::before {
     content: "🔗 ";
   }
   
@@ -62,6 +73,9 @@ header .menu a:hover{
 }
 
 .itens-menu a[href^="https"]::before {
+    content: "🔗 ";
+  }
+.itens-menu a[href^="/content.html"]::before {
     content: "🔗 ";
   }
   
@@ -146,9 +160,127 @@ footer{
 }
 .rodape{display: flex; align-items: center; justify-content: center;}
 .rodape a{font-size: 1.5em; color: rgba(255,255,255, 0.5); margin-right: 2%;}
-.rodape a:hover{ color: rgb(255, 255, 255)}
+.rodape a:hover{ color: rgb(255, 255, 255); transition: color 800ms;}
 /* ELIMINANDO A MARGEM DIREITA DO ULTIMO ELEMENTO DOS ICONES (NESSE O ULTIMO ELEMENTO FILHO)*/
 .rodape a:last-child{margin-right: 0;}
+
+
+/* ===========================================================
+PAGE CONTENT
+============================================================*/
+
+/* === HEADER === */
+.btn-voltar{
+    margin: 0 !important;
+}
+.header-conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-conteiner .herder-logo{
+    color: rgba(255,255,255, 0.5);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.herder-logo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* === CARDS === */
+.title{
+    margin: 30px;
+    text-align: center;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 30px;
+    text-align: center;
+    height: 700px;
+    
+}
+
+.card{
+    height: 80%;
+    border-radius: 15px;
+    /* background-color:  #202024; */
+    box-shadow: 0px 0px 15px 0px #55555f;
+    cursor: pointer;
+    position: relative;
+    transition: all .2s ease-in-out;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.card.roxo:hover{
+    top: -10px;
+    border: 2px solid #7676d8;
+
+}
+.card.verde:hover{
+    top: -10px;
+    border: 2px solid rgb(33, 236, 33);
+
+}
+.card.laranja:hover{
+    top: -10px;
+    border: 2px solid rgb(250, 151, 2);
+
+}
+
+.laranja p strong{
+    color: rgb(250, 151, 2);
+}
+.verde p strong{
+    color: rgb(33, 236, 33);
+}
+.roxo p strong{
+    color: #7676d8;
+}
+
+.card p{
+    margin-top: 30px;
+    
+}
+
+.free{
+    background-color: rgb(33, 236, 33);
+}
+
+.pago{
+    background-color: red;
+}
+
+.card .mod{
+    margin-top: 30px;
+}
+.card .price{
+    margin-top: 30px;
+    width: 40%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 10px;
+   
+}
+
 
 /*==============================================================
 MEDIA QUERIES E BREAKPOINTS

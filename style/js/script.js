@@ -9,3 +9,5 @@ $(".btn-menu").click(function(){
     $(".itens-menu").show();
     $(".btn-menu").hide();
 });
+
+const cards = document.querySelectorAll(".card");
