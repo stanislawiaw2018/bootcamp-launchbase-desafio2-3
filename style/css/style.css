@@ -151,7 +151,6 @@ main .logo-corpo{
    margin: 30px 20px 30px;
    text-align: justify;
    font-size: 14px;
-   /* letter-spacing: 1px; */
 }
 
 .corpo .corpo-mensagem li{
@@ -225,7 +224,6 @@ PAGE CONTENT
 .card{
     height: 80%;
     border-radius: 15px;
-    /* background-color:  #202024; */
     box-shadow: 0px 0px 15px 0px #55555f;
     cursor: pointer;
     position: relative;
@@ -324,7 +322,6 @@ PAGE CONTENT
 .model .close-model{
     color: black;
     position: absolute;
-    /* padding: 10px 14px; */
     right: 15px;
     margin-top: 8px;
     cursor: pointer;
@@ -333,7 +330,6 @@ PAGE CONTENT
 .model .max-model{
     color: black;
     position: absolute;
-    /* padding: 10px 14px; */
     right: 40px;
     margin-top: 10px;
     cursor: pointer;
@@ -388,15 +384,12 @@ MEDIA QUERIES E BREAKPOINTS
         display: flex;
     }
     .menu-bar button{
-        /* display: flex; */
         width: 40px;
         height: 40px;
         border-radius: 50%;
        
     }
     .itens-menu{
-        /* align-content: center; */
-        /* justify-content: center; */
         position: relative;
         top: 0;
         right: 0;
@@ -404,10 +397,7 @@ MEDIA QUERIES E BREAKPOINTS
         padding: 10% 0;
         margin-right: -30px;
         width: 200px;
-        /* min-height: 100vh; */
         background-color: rgba(255, 255, 255, 0.671);
-        /* overflow-x: hidden; */
-        /* overflow-y: auto; */
         transition: all ease .8s;
         z-index: 10;
     }
@@ -464,20 +454,6 @@ MEDIA QUERIES E BREAKPOINTS
     
     
 }
-
- /*===============================================================
-  smartphones, Android phones, landscape iPhone 
-  ================================================================*/
-@media (min-width:480px) { 
-    
-}
-
- /*============================================================================================ 
- portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android)
- ============================================================================================ */
-@media (min-width:600px) { 
-    
- }
 
 /* ============================================================
 tablet, landscape iPad, lo-res laptops ands desktops 
