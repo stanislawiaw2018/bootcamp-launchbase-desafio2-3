@@ -18,7 +18,10 @@
 <h2>
 
 <h2 align="center">
-<img alt="layout demonstrativo" src="style/image/Desafio2-1.png" width="600px">
+<img alt="layout demonstrativo" src="style/image/Desafio2-3(index.html).png" width="600px">
+</h2>
+<h2 align="center">
+<img alt="layout demonstrativo" src="style/image/Desafio2-3(content.html).png" width="600px">
 </h2>
 
 <p align="center">
