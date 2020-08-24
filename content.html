@@ -4,9 +4,9 @@
         <!-- META DADOS -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Keybord" content="Educação, Rocketseat, Portfolio, Front-end">
+        <meta name="Keybord" content="Educação, Rocketseat, Front-end">
         <meta name="description" content="Projeto desenvolvido no bootcamp LaunchBase com intuito de aprimorar os conhecimentos de Font-end.">
-        <meta name="robots" content="index, follow">
+        <meta name="robots" content="content, conteudo">
         <meta name="author" content="Antonio Stanislaw">
         <!-- FIM META DADOS-->
         <!-- CSS -->
@@ -39,7 +39,7 @@
             <main >
                 <h1 class="title">Cursos</h1>
                 <div class="cards">
-                    <section class="card roxo">
+                    <section class="card roxo" id="starter">
                         <div class="card-logo">
                             <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/starter.svg" alt="logo starter">
                         </div>
@@ -49,7 +49,7 @@
                         <div class="price free">GRATUITO</div>
                     </section>
 
-                    <section class="card laranja">
+                    <section class="card laranja" id="launchbase">
                         <div class="card-logo">
                             <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/launchbase.svg" alt="logo launchbase">
                         </div>
@@ -59,7 +59,7 @@
                         <div class="price pago">PAGO</div>
                     </section>
 
-                    <section class="card verde">
+                    <section class="card verde" id="gostack">
                         <div class="card-logo">
                             <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/gostack.svg" alt="logo gostack">
                         </div>
@@ -70,10 +70,28 @@
                     </section>
                     
                 </div>
+                <div class="modal-overlay">
+                    <div class="model">
+                        
+                        <a class="max-model">
+                            <i class="fa fa-window-maximize fa-2x"></i>
+                        </a>
+
+                        <a class="close-model">
+                            <i class="fa fa-times fa-2x"></i>
+                        </a>
+                    </div>
+        
+                    <div class="modal-content" >
+                        <iframe class="" src="" frameborder="0"></iframe>
+                    </div>
+                    
+                </div>
+        
             </main>
            
         </div>
-        <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script> -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
         <script src="/style/js/script.js"></script>
     </body>
 </html>

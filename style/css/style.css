@@ -1,3 +1,15 @@
+:root{
+    --color-red-ligth: #f30404cc;
+    --color-background-body: #121525;
+    --color-background-card: #f3f4f72c;
+    --color-background-header: rgba(0, 0, 0, 0.256);
+    --color-background-modal-overlay: rgba(0, 0, 0, 0.692);
+    --color-white: white;
+    --color-red: #f30404;
+    --color-background-alternativo: #998989;
+
+}
+
 /*RESET*/
 *{
     margin: 0;
@@ -281,6 +293,75 @@ PAGE CONTENT
    
 }
 
+
+/* ===MODAL=== */
+
+.modal-overlay{
+    background-color: var(--color-background-modal-overlay);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+}
+
+.model{
+    background-color: var(--color-white);
+    margin: 5vh auto;
+    width: 80%;
+    height: 90%;
+    position: relative; /* Relativo ao close-model, para utilização do absolute */
+}
+
+.model.maximizado{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.model .close-model{
+    color: black;
+    position: absolute;
+    /* padding: 10px 14px; */
+    right: 15px;
+    margin-top: 8px;
+    cursor: pointer;
+
+}
+.model .max-model{
+    color: black;
+    position: absolute;
+    /* padding: 10px 14px; */
+    right: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.modal-overlay.active{
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe{
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    
+}
+
+iframe.maximizado{
+    width: 100%;
+    height: 93%;
+    right: 0;
+    top: 7%;
+    
+}
 
 /*==============================================================
 MEDIA QUERIES E BREAKPOINTS
