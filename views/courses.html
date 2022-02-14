@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block head %}
+
+<title>Rocketseat | Conteúdos</title>
+
+{% endblock %}
+
+{% block content %}
+
+<div>
+    <header class="header-conteiner">
+        <a href="/" class="btn-voltar">
+            <i class="fa fa-long-arrow-left"></i>
+            Voltar
+        </a>
+        <a class=herder-logo>
+            <img src="/assets/image/logo-rocketseat.png" alt="logo rocketseat">
+            Rocketseat
+        </a>
+
+    </header>
+    <main>
+        <h1 class="title">Cursos</h1>
+        <div class="cards">
+            <a href="https://app.rocketseat.com.br/" target="_blank">
+
+                <section class="card roxo" id="starter">
+                    <div class="card-logo">
+                        <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/starter.svg"
+                            alt="logo starter">
+                    </div>
+
+                    <p><strong>Torne-se um programador desejado</strong> no mercado com esses cursos gratuitos</p>
+                    <div class="mod">5 módulos</div>
+                    <div class="price free">GRATUITO</div>
+                </section>
+
+            </a>
+
+            <a href="https://www.rocketseat.com.br/ignite" target="_blank" >
+
+                <section class="card laranja" id="launchbase">
+                    <div class="card-logo">
+                        <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/launchbase.svg"
+                            alt="logo launchbase">
+                    </div>
+
+                    <p><strong>Domine programação do zero</strong> e tenha acesso às melhores oportunidades do mercado
+                    </p>
+                    <div class="mod">12 módulos</div>
+                    <div class="price pago">PAGO</div>
+                </section>
+
+
+            </a>
+
+            <a href="https://app.rocketseat.com.br/checkout/rocketseat?plan=ultimate&utm_source=rocket&utm_medium=home&utm_campaign=cart_nlw7&utm_term=ultimate&utm_content=sale_nlw7" target="_blank">
+
+                <section class="card verde" id="gostack">
+                    <div class="card-logo">
+                        <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/gostack.svg"
+                            alt="logo gostack">
+                    </div>
+
+                    <p><strong>Treinamento imersivo</strong> nas tecnologias mais modernas de desenvolvimento web e
+                        mobile
+                    </p>
+                    <div class="mod">16 módulos</div>
+                    <div class="price pago">PAGO</div>
+                </section>
+
+            </a>
+
+        </div>
+        <div class="modal-overlay">
+            <div class="model">
+
+                <a class="max-model">
+                    <i class="fa fa-window-maximize fa-2x"></i>
+                </a>
+
+                <a class="close-model">
+                    <i class="fa fa-times fa-2x"></i>
+                </a>
+            </div>
+
+            <div class="modal-content">
+                <iframe class="" src="" frameborder="0"></iframe>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script src="/style/js/script.js"></script>
+{% endblock %}

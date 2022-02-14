@@ -221,6 +221,11 @@ PAGE CONTENT
     
 }
 
+
+.cards a{
+    color: inherit;
+}
+
 .card{
     height: 80%;
     border-radius: 15px;
@@ -292,6 +297,8 @@ PAGE CONTENT
 }
 
 
+
+
 /* ===MODAL=== */
 
 .modal-overlay{
@@ -358,6 +365,92 @@ iframe.maximizado{
     top: 7%;
     
 }
+
+/* ===PAGE NOT-FOUND=== */
+
+.englobador{
+    height: 100vh;
+    width: 100vw;
+    background-color: #121214;
+    display: grid;
+    
+    align-items: center;
+    justify-items: center;
+
+}
+.englobador .conteiner{
+ 
+   
+
+   color: #a8a8b3;
+   display:flex;
+   justify-content: space-evenly;
+   width:90%;
+}
+
+.img_constelation{
+
+    align-items: center;
+    width:45%;
+    
+}
+.box_text{
+    margin: auto 0;
+    width:45%;
+ 
+}
+
+.box_text h1{
+    color: #8257e5;
+    font-size:6rem;
+    
+}
+
+.box_text h2{
+    color: #ffffff;
+    font-size:2rem;
+    padding-bottom: 3rem;
+}
+
+.box_text h4{
+    color: #04d361;
+    padding-bottom: 2rem;
+}
+
+.box_text p{
+    color: #a8a8b3;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+.retorno{
+    color: #ffffff;
+    background-color: #8257e6;
+    box-shadow: none;
+    border-radius:5px;
+    font-size:14px;
+    line-height:26px;
+    letter-spacing:normal;
+    text-align: center;
+    padding: 15px 48px;
+    /* margin-top: 50px; */
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 800ms  ease-in-out;
+    text-decoration: none;
+}
+.retorno:hover{
+    background: rgba(130, 87, 230, 0.7);
+   
+    transition: all 800ms ease-in-out;
+}
+
+
+
+
+
+
+
 
 /*==============================================================
 MEDIA QUERIES E BREAKPOINTS

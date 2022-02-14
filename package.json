@@ -1,0 +1,19 @@
+{
+  "name": "projeto-bootcamp-launchbase-desafio2-3",
+  "version": "1.0.0",
+  "description": "projeto desenvolvido para o amadurecimento do aprendizado em backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": "https://github.com/stanislawiaw2018/bootcamp-launchbase-desafio2-3.git",
+  "author": "Antonio Stanislaw",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "nunjucks": "^3.2.3"
+  }
+}

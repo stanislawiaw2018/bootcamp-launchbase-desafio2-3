@@ -36,3 +36,8 @@ max.addEventListener("click",function(){
     iframe.classList.toggle("maximizado");
 })
 
+
+function Home(){
+    window.location.href = "/"
+  }
+
