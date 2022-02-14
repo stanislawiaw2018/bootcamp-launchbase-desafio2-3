@@ -1,6 +1,6 @@
 <h1 align="center">
 
-:computer: **DESAFIO 2-3**: Página de cursos e iframe
+:computer: **DESAFIO 3-1**: Primeiro servidor
 
 </h1>
 
@@ -10,11 +10,11 @@
 
 <h4 align="center"> 
     
-“Você nunca sai perdendo quando ganha conhecimento!”
+A recompensa do estudo é a compreensão.
 
 </h4>
 
-<h2 align="center" style="color:black"> Layout do Desafio Concluído
+<!-- <h2 align="center" style="color:black"> Layout do Desafio Concluído
 <h2>
 
 <h2 align="center">
@@ -22,7 +22,7 @@
 </h2>
 <h2 align="center">
 <img alt="layout demonstrativo" src="style/image/Desafio2-3(content.html).png" width="600px">
-</h2>
+</h2> -->
 
 <p align="center">
     <a href="https://www.linkedin.com/in/antonio-stanislaw-dos-santos-47a077106/">
@@ -64,6 +64,25 @@ Nesse desafio foi implementado alguns conceitos não relacionados nos critérios
 - HTML5;
 - CSS3;
 - JavaScript
+
+---
+##  📁 Arquivos HTML
+
+- `courses.njk`: Arquivo referente à pagina de conteúdos, deve ser servido na rota raiz.
+- `about.njk`: Arquivo referente à pagina de descrição, deve ser servido na rota /about.
+- `layout.njk`: Arquivo referente à base comum entre as páginas.
+- `not-found.njk`: Arquivo referente à pagina de erro 404, deve ser servido quando for realizada uma requisição à uma página que não existe. Esse arquivo deve ter:
+
+  - Layout.njk como base
+  - Ter um texto informativo sobre o erro
+
+  Dica: Para capturar essas requisições, basta adicionar esse trecho após **todas** as rotas no seu `server.js`:
+
+```js
+server.use(function(req, res) {
+  res.status(404).render("not-found");
+});
+```
 
 ## ⏬ Como baixar o projeto
 - É necessário ter o git instalado em sua máquina

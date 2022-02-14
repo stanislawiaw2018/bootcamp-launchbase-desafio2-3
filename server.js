@@ -7,7 +7,7 @@ const server=express();
 
 server.use(express.static('public'));
 
-server.set("view engine","html");
+server.set("view engine","njk");
 
 nunjucks.configure("views",{
     express: server
@@ -27,6 +27,6 @@ server.use( function(req, res){
 })
 
 
-server.listen(5008,function(){
-    console.log("listening on");
+server.listen(3333,function(){
+    console.log('listening on port 3333');
 })
